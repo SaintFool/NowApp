@@ -1,0 +1,17 @@
+# Ignorar archivos de entorno que puedan contener contraseñas o secretos
+.env
+
+# Ignorar directorios de dependencias de lenguajes comunes
+node_modules/
+venv/
+__pycache__/
+
+# Ignorar archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# IMPORTANTE: Si alguna vez ejecutas docker-compose, podría crear carpetas
+# con datos que NUNCA deben subirse. Por ejemplo, la carpeta del volumen.
+# No es tu caso ahora, pero es una práctica EXCELENTE añadirlo.
+pgdata/
+datos-nowapp/
