@@ -1,0 +1,14 @@
+# Ignorar archivos de entorno que puedan contener contraseñas o secretos
+.env
+
+# Ignorar directorios de dependencias de lenguajes comunes
+node_modules/
+venv/
+__pycache__/
+
+# Ignorar archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+pgdata/
+datos-nowapp/

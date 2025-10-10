@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - NowApp</title>
+    <link rel="stylesheet" href="style-login.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <header>
+            <h2>Iniciar Sesión</h2>
+            <p>Ingresa a tu cuenta de NowApp</p>
+        </header>
+
+        <main>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Nombre de Usuario</label>
+                    <input type="text" id="username" name="username" placeholder="Tu nombre de usuario" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Tu contraseña" required>
+                </div>
+
+                <button type="submit" class="button">Ingresar</button>
+            </form>
+            <p id="error-message" class="error"></p>
+        </main>
+
+        <footer>
+            <p class="register-link">¿No tienes una cuenta? <a href="registro.html">Regístrate aquí</a></p>
+        </footer>
+    </div>
+    <script src="login-script.js"></script>
+</body>
+</html>

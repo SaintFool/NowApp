@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal - NowApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <!-- El nombre del usuario será insertado aquí por JavaScript -->
+        <h1 id="user-welcome"></h1>
+        <nav>
+            <a href="tienda.html" class="button">Ir a la Tienda</a>
+            <a href="transferencias.html" class="button">Realizar Transferencias</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="balance">
+            <h2>Saldo Actual</h2>
+            <!-- El saldo será insertado aquí por JavaScript -->
+            <p id="account-balance"></p>
+        </section>
+
+        <section class="movements">
+            <h2>Últimos Movimientos</h2>
+            <!-- La lista de movimientos será generada y insertada aquí por JavaScript -->
+            <ul id="movements-list"></ul>
+            <div class="actions">
+                 <a href="movimientos.html" class="button">Ver todos los movimientos</a>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

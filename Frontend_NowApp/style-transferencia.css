@@ -1,0 +1,127 @@
+:root {
+    --color-principal: #3498db;
+    --color-fondo: #f4f4f4;
+    --color-texto: #333333;
+    --color-blanco: #ffffff;
+    --sombra-suave: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px; 
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--color-blanco);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--sombra-suave);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--color-fondo);
+    padding-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: var(--color-principal);
+}
+
+header p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+#transfer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-principal);
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.button {
+    display: inline-block;
+    width: 100%; 
+    padding: 15px 20px;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    border: none; 
+    cursor: pointer; 
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--color-principal);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+input[readonly] {
+    background-color: #f0f0f0; 
+    cursor: not-allowed;
+}
+
+.message {
+    margin-top: 15px;
+    font-weight: bold;
+    height: 20px;
+    text-align: center;
+}
+.success {
+    color: #27ae60; 
+}
+.error {
+    color: #c0392b; 
+}

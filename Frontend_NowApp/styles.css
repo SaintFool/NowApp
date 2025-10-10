@@ -1,0 +1,121 @@
+:root {
+    --color-principal: #3498db;
+    --color-fondo: #f4f4f4;
+    --color-texto: #333333;
+    --color-blanco: #ffffff;
+    --sombra-suave: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --verde-exito: #27ae60;
+    --rojo-error: #c0392b;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px; 
+    box-sizing: border-box;
+}
+
+header, main {
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: var(--color-blanco);
+    box-sizing: border-box;
+    box-shadow: var(--sombra-suave);
+}
+
+header {
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.button {
+    display: block; 
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+}
+
+.balance h2 {
+    font-size: 1.2em;
+    color: #555;
+}
+#account-balance {
+    font-size: 2.2em; 
+    font-weight: bold;
+    color: var(--color-principal);
+    margin: 0;
+}
+
+.movements h2 {
+    border-bottom: 2px solid var(--color-fondo);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#movements-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#movements-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5px; 
+    border-bottom: 1px solid var(--color-fondo);
+}
+.amount.deposit { color: var(--verde-exito); font-weight: bold; }
+.amount.withdrawal { color: var(--rojo-error); font-weight: bold; }
+
+.actions {
+    margin-top: 20px;
+}
+
+/* --- MEDIA QUERY PARA TABLETS Y ESCRITORIO (> 768px) --- */
+@media (min-width: 768px) {
+    .container {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px auto; 
+        padding: 0;
+    }
+
+    header, main {
+        border-radius: 8px; 
+    }
+
+    header nav {
+        flex-direction: row; 
+        justify-content: center;
+    }
+
+    .button {
+        display: inline-block; 
+        width: auto;
+    }
+
+    #account-balance {
+        font-size: 2.8em; 
+    }
+
+    #movements-list li {
+        padding: 15px 10px;
+    }
+}

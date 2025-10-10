@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - NowApp</title>
+    <link rel="stylesheet" href="style-carrito.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <a href="tienda.html" class="back-link">&larr; Seguir Comprando</a>
+            <h1>Tu Carrito de Compras</h1>
+        </header>
+
+        <main id="cart-content">
+            <div id="cart-items-container">
+
+            </div>
+            
+            <div id="cart-summary-container" class="cart-summary">
+                <h2>Resumen del Pedido</h2>
+                <div id="subtotals-list">
+                    
+                </div>
+                <hr>
+                <div class="summary-line total">
+                    <span>Total a Pagar:</span>
+                    <span id="total-price">S/ 0.00</span>
+                </div>
+
+                <button id="checkout-button" class="button checkout-btn">Finalizar Compra y Pagar</button>
+                <p id="checkout-message" class="message"></p>
+            </div>
+        </main>
+
+        <!-- Mensaje para cuando el carrito está vacío -->
+        <div id="empty-cart-message" class="empty-cart" style="display: none;">
+            <h2>Tu carrito está vacío</h2>
+            <p>¡Añade productos desde la tienda para empezar a comprar!</p>
+        </div>
+    </div>
+
+    <script src="carrito-script.js"></script>
+</body>
+</html>

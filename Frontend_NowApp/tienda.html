@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - NowApp</title>
+    <link rel="stylesheet" href="style-tienda.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="store-header">
+            <a href="index.html" class="back-link">&larr; Volver a la Billetera</a>
+            <h1>Tienda NowApp</h1>
+            <div class="header-actions">
+                <a href="carrito.html" class="button cart-button">🛒 Ir al Carrito</a>
+                <button class="button rate-button">⭐ Calificar App</button>
+            </div>
+        </header>
+
+        <main>
+            <nav class="filters">
+                <button class="filter-btn active" data-store-id="all">Todas las Tiendas</button>
+                <button class="filter-btn" data-store-id="store_burger_joint">🍔 The Burger Joint</button>
+                <button class="filter-btn" data-store-id="store_cineplex_central">🎬 Cineplex Central</button>
+                <button class="filter-btn" data-store-id="store_tech_gadgets">💻 Tech Gadgets</button>
+            </nav>
+
+            <div id="product-grid" class="product-grid">
+                <!-- Las tarjetas de producto se generarán aquí con JavaScript -->
+            </div>
+        </main>
+    </div>
+
+    <script src="tienda-script.js"></script>
+
+    <div id="review-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Califica tu Experiencia en NowApp</h2>
+            <p>Tu opinión nos ayuda a mejorar.</p>
+            
+            <form id="review-form">
+                <div class="form-group">
+                    <label>Puntuación (de 1 a 10)</label>
+                    <div id="score-stars" class="stars">
+                        <!-- Las estrellas se generarán con JavaScript -->
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="review-comment">Comentario (Opcional)</label>
+                    <textarea id="review-comment" rows="4" maxlength="500" placeholder="¿Qué te pareció la experiencia de compra?"></textarea>
+                </div>
+                
+                <button type="submit" class="button submit-review-btn">Enviar Calificación</button>
+                <p id="review-message" class="message"></p>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
